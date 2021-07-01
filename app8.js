@@ -13,7 +13,8 @@ app.get('/',function(req,res)
 });
 app.get('/contact',function(req,res)
 {
-    res.render('contact');
+    res.render('contact',{qs:req.query});
+    console.log(res.query)
 });
 
 app.get('/home',function(req,res)
